@@ -1,57 +1,99 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOTEL EL FORSANE</title>
+<title>Hotel EL FORSANE</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#f4f4f4;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
 }
 
 header{
-background:#0b3d91;
+background:#0A3D62;
 color:white;
 padding:20px;
 text-align:center;
 }
 
+header h1{
+font-size:38px;
+}
+
 nav{
-background:#062d6f;
+background:#D4AF37;
 padding:15px;
 text-align:center;
 }
 
 nav a{
-color:white;
+color:#0A3D62;
 text-decoration:none;
 margin:15px;
 font-weight:bold;
 }
 
 .hero{
-padding:80px 20px;
-background:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600') center/cover;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600");
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 color:white;
 text-align:center;
 }
 
-.hero h1{
+.hero h2{
 font-size:45px;
 }
 
-.section{
-padding:50px 20px;
+.btn{
+background:#D4AF37;
+padding:15px 35px;
+color:#0A3D62;
+text-decoration:none;
+margin-top:20px;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 text-align:center;
 }
 
 footer{
-background:#0b3d91;
+background:#0A3D62;
 color:white;
-padding:20px;
+padding:30px;
 text-align:center;
 }
 </style>
@@ -61,35 +103,108 @@ text-align:center;
 <body>
 
 <header>
-<h1>HOTEL EL FORSANE</h1>
-<p>Saïda - Algeria</p>
+
+<h1>HOTEL EL FORSANE ★★★</h1>
+
+<p>Saïda - Algérie</p>
+
 </header>
 
 <nav>
-<a href="#">الرئيسية</a>
-<a href="#">الغرف</a>
-<a href="#">المطعم</a>
-<a href="#">المسبح</a>
-<a href="#">اتصل بنا</a>
+
+<a href="#">Accueil</a>
+
+<a href="#">Chambres</a>
+
+<a href="#">Restaurant</a>
+
+<a href="#">Piscine</a>
+
+<a href="#">Galerie</a>
+
+<a href="#">Contact</a>
+
 </nav>
 
-<section class="hero">
-<h1>مرحباً بكم في فندق الفرسان</h1>
-<p>راحة، فخامة، وخدمة مميزة</p>
+<div class="hero">
+
+<h2>Bienvenue à Hotel EL FORSANE</h2>
+
+<p>Luxury • Comfort • Hospitality</p>
+
+<a class="btn">Réserver</a>
+
+</div>
+
+<section>
+
+<h2 style="text-align:center;margin-bottom:40px;">Nos Chambres</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Chambre Single</h3>
+
+<h2>5500 DA</h2>
+
+<p>Petit déjeuner inclus</p>
+
+</div>
+
+<div class="card">
+
+<h3>Chambre Double</h3>
+
+<h2>6500 DA</h2>
+
+<p>Petit déjeuner inclus</p>
+
+</div>
+
+<div class="card">
+
+<h3>Suite de Luxe</h3>
+
+<h2>12000 DA</h2>
+
+<p>Petit déjeuner inclus</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-<h2>اتصل بنا</h2>
+<section>
 
-<p>📧 forsanereception@gmail.com</p>
+<h2 style="text-align:center;margin-bottom:40px;">Nos Services</h2>
 
-<p>☎️ 040 656 928</p>
+<div class="cards">
+
+<div class="card">🏊 Piscine</div>
+
+<div class="card">🍽 Restaurant</div>
+
+<div class="card">☕ Café</div>
+
+<div class="card">🚗 Parking</div>
+
+<div class="card">📶 Wi-Fi Gratuit</div>
+
+<div class="card">🎉 Salle de Conférence</div>
+
+</div>
 
 </section>
 
 <footer>
 
-© HOTEL EL FORSANE 2026
+<p>📞 040 656 928</p>
+
+<p>📧 forsanereception@gmail.com</p>
+
+<p>Hotel EL FORSANE - Saïda</p>
 
 </footer>
 
