@@ -1,101 +1,147 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel EL FORSANE</title>
+
+<title>Hotel EL FORSANE - Saïda</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Cairo',sans-serif;
 }
 
 body{
-background:#f5f5f5;
+background:#f4f4f4;
 color:#333;
 }
 
 header{
-background:#0A3D62;
+background:#0B3D91;
 color:white;
 padding:20px;
 text-align:center;
 }
 
 header h1{
-font-size:38px;
+font-size:42px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
 }
 
 nav{
-background:#D4AF37;
+background:#08306b;
 padding:15px;
 text-align:center;
 }
 
 nav a{
-color:#0A3D62;
+color:white;
 text-decoration:none;
 margin:15px;
+font-size:18px;
 font-weight:bold;
 }
 
 .hero{
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600");
-background-size:cover;
-background-position:center;
-height:80vh;
+height:650px;
+background:url('images/hotel.jpg') center center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction:column;
-color:white;
 text-align:center;
+color:white;
 }
 
 .hero h2{
-font-size:45px;
-}
-
-.btn{
-background:#D4AF37;
-padding:15px 35px;
-color:#0A3D62;
-text-decoration:none;
-margin-top:20px;
-border-radius:30px;
-font-weight:bold;
+font-size:55px;
+background:rgba(0,0,0,.5);
+padding:20px 35px;
+border-radius:12px;
 }
 
 section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#0B3D91;
+font-size:38px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
 .card{
 background:white;
-padding:25px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+}
+
+.card p{
+padding:0 20px 20px;
+text-align:center;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#0B3D91;
+padding-bottom:20px;
 text-align:center;
 }
 
 footer{
-background:#0A3D62;
+background:#0B3D91;
 color:white;
 padding:30px;
 text-align:center;
 }
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+left:25px;
+background:#25D366;
+color:white;
+padding:15px 22px;
+border-radius:50px;
+font-size:20px;
+text-decoration:none;
+}
+
 </style>
 
 </head>
@@ -104,72 +150,58 @@ text-align:center;
 
 <header>
 
-<h1>HOTEL EL FORSANE ★★★</h1>
+<h1>HOTEL EL FORSANE</h1>
 
-<p>Saïda - Algérie</p>
+<p>Bienvenue à l'Hôtel EL FORSANE - Saïda Algérie</p>
 
 </header>
 
 <nav>
 
-<a href="#">Accueil</a>
+<a href="#">الرئيسية</a>
 
-<a href="#">Chambres</a>
+<a href="#">الغرف</a>
 
-<a href="#">Restaurant</a>
+<a href="#">المسبح</a>
 
-<a href="#">Piscine</a>
+<a href="#">المطعم</a>
 
-<a href="#">Galerie</a>
+<a href="#">قاعة الحفلات</a>
 
-<a href="#">Contact</a>
+<a href="#">اتصل بنا</a>
 
 </nav>
 
-<div class="hero">
+<section class="hero">
 
-<h2>Bienvenue à Hotel EL FORSANE</h2>
+<h2>مرحباً بكم في فندق الفرسان - سعيدة</h2>
 
-<p>Luxury • Comfort • Hospitality</p>
 
-<a class="btn">Réserver</a>
+</<section>
 
-</div>
-
-<section>
-
-<h2 style="text-align:center;margin-bottom:40px;">Nos Chambres</h2>
+<h2>الغرف والأسعار</h2>
 
 <div class="cards">
 
 <div class="card">
-
-<h3>Chambre Single</h3>
-
-<h2>5500 DA</h2>
-
-<p>Petit déjeuner inclus</p>
-
+<img src="images/single.jpg">
+<h3>غرفة فردية</h3>
+<p>غرفة مريحة مع فطور مجاني.</p>
+<div class="price">5500 DA</div>
 </div>
 
 <div class="card">
-
-<h3>Chambre Double</h3>
-
-<h2>6500 DA</h2>
-
-<p>Petit déjeuner inclus</p>
-
+<img src="images/double.jpg">
+<h3>غرفة مزدوجة</h3>
+<p>مثالية للأزواج والعائلات الصغيرة.</p>
+<div class="price">6500 DA</div>
 </div>
 
 <div class="card">
-
-<h3>Suite de Luxe</h3>
-
-<h2>12000 DA</h2>
-
-<p>Petit déjeuner inclus</p>
-
+<img src="images/suite.jpg">
+<h3>جناح فاخر</h3>
+<p>إقامة فاخرة مع جميع وسائل الراحة.</p>
+<div class="price">12000 DA</div>
 </div>
 
 </div>
@@ -178,35 +210,94 @@ text-align:center;
 
 <section>
 
-<h2 style="text-align:center;margin-bottom:40px;">Nos Services</h2>
+<h2>خدمات الفندق</h2>
 
 <div class="cards">
 
-<div class="card">🏊 Piscine</div>
+<div class="card">
+<img src="images/pool.jpg">
+<h3>المسبح</h3>
+<p>استمتع بمسبح عصري وجلسات مريحة طوال فصل الصيف.</p>
+</div>
 
-<div class="card">🍽 Restaurant</div>
+<div class="card">
+<img src="images/restaurant.jpg">
+<h3>المطعم</h3>
+<p>أطباق جزائرية وعالمية يقدمها طهاة محترفون.</p>
+</div>
 
-<div class="card">☕ Café</div>
-
-<div class="card">🚗 Parking</div>
-
-<div class="card">📶 Wi-Fi Gratuit</div>
-
-<div class="card">🎉 Salle de Conférence</div>
+<div class="card">
+<img src="images/conference.jpg">
+<h3>قاعة المؤتمرات</h3>
+<p>قاعة مجهزة للاجتماعات والندوات والحفلات.</p>
+</div>
 
 </div>
+
+</section><section>
+
+<h2>معرض الصور</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/hotel1.jpg">
+</div>
+
+<div class="card">
+<img src="images/hotel2.jpg">
+</div>
+
+<div class="card">
+<img src="images/hotel3.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>احجز الآن</h2>
+
+<form style="max-width:600px;margin:auto;background:#fff;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.2);">
+
+<input type="text" placeholder="الاسم الكامل" style="width:100%;padding:15px;margin:10px 0;">
+
+<input type="email" placeholder="البريد الإلكتروني" style="width:100%;padding:15px;margin:10px 0;">
+
+<input type="tel" placeholder="رقم الهاتف" style="width:100%;padding:15px;margin:10px 0;">
+
+<input type="date" style="width:100%;padding:15px;margin:10px 0;">
+
+<textarea placeholder="ملاحظات" style="width:100%;padding:15px;margin:10px 0;height:150px;"></textarea>
+
+<button style="width:100%;padding:18px;background:#0B3D91;color:#fff;font-size:20px;border:none;border-radius:8px;cursor:pointer;">
+إرسال طلب الحجز
+</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>📞 040 656 928</p>
+<h2 style="color:white;">Hotel EL FORSANE</h2>
 
-<p>📧 forsanereception@gmail.com</p>
+<p>Saïda - Algérie</p>
 
-<p>Hotel EL FORSANE - Saïda</p>
+<p>☎ +213 XX XX XX XX</p>
+
+<p>✉ contact@hotelforsane.dz</p>
+
+<p>© 2026 Hotel EL FORSANE. Tous droits réservés.</p>
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/213000000000">
+WhatsApp
+</a>
+
 </body>
+
 </html>
